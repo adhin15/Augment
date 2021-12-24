@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1 !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  margin: 0px;
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  position: sticky;
+  top: -5px;
+  margin: 0;
+  box-shadow: 0 37px 37px -4px rgba(0, 0, 0, 0.02);
+  z-index: 5;
+
+  padding: 20px 10px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  color: #93948f;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.topnav a:hover {
+  color: #93948f;
+  border-bottom: 1px solid #d1d4c9;
+}
+.topnav .logo-link:hover {
+  border: 0;
+}
+.active {
+  border-bottom: 1px solid #d1d4c9;
+}
+
+.top-dark {
+  background: #152a38;
+}
+.top-dark h3 {
+  color: #93948f;
+}
+.top-ligth {
+  background: #ffffff;
+}
+
+/* Change color on hover */
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.section {
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Fake image */
+
+/* Add a card effect for articles */
+
+/* Clear floats after the columns */
+.container {
+  padding: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
+  min-height: 100vh;
+}
+.container .card {
+  box-shadow: 13px 18px 20px -11px rgba(0, 0, 0, 0.23);
+
+  border: 1px solid #93948f;
+  background: #152a38;
+  margin: 8px 10px;
+}
+
+.container .card:hover {
+  transform: translate(0, -4px) scale(1.05);
+  transition: transform 120ms ease-in-out;
+}
+.container .card h3 {
+  color: #d1d4c9;
+}
+.container .card p {
+  font-size: 16px;
+  color: #d1d4c9;
+  font-weight: 500;
+}
+
+.container .animation :hover :not(p) :not(h1) {
+  box-shadow: 0 0 4px #000000;
+}
+.container .card-detail {
+  border: 0px;
+  background: #152a38;
+}
+.container .card-detail h1 {
+  color: #d1d4c9;
+  font-weight: 700;
+  border-bottom: 4px solid #556e53;
+}
+.container .card-detail h2 {
+  color: #d1d4c9;
+}
+.container .accent {
+  color: #556e53;
+}
+
+.card-detail p {
+  font-size: 16px;
+  color: #d1d4c9;
+  font-weight: 500;
+}
+
+.bg-dark {
+  background: #18242e;
+}
+.bg-dark h1 {
+  color: #c2c2c2;
+  font-weight: 700;
+}
+.bg-dark .header-label {
+  color: #93948f;
+}
+.bg-dark p {
+  color: #93948f;
+  font-weight: 600;
+}
+
+.bg-light {
+  background: #e4e4e4;
+}
+.bg-light h1 {
+  color: #152a38;
+  font-weight: 700;
+}
+.bg-light p {
+  color: #3a5f77;
+  font-weight: 600;
+}
+.bg-light .header-label {
+  color: #93948f;
+}
+/* Footer */
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px;
+}
+
+footer h5 {
+  color: #eee;
+}
+
+.row {
+  margin: 20px;
+  min-height: 100vh;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .section,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+  }
+  .topnav form {
+    position: relative;
+    display: block;
+    right: 0;
+    text-decoration: none;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.sidebar {
+  height: 100vh;
+  margin-right: 24px;
+}
+
+.menu {
+  display: none;
+}
+.logo {
+  height: 44px;
+}
+.menu-drawer {
+  background: #152a38;
+}
+.menu-drawer a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  text-align: left;
+  color: #d1d4c9;
+  font-weight: 600;
+  padding: 24px 26px;
+  text-decoration: none;
+  border-bottom: 1px solid #7e7e7e;
+}
+.menu-drawer a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.menu-drawer .drawer-item {
+  margin: 0 5px;
+}
+.ant-drawer-header {
+  background: #152a38 !important;
+}
+
+.ant-table {
+  background: transparent !important;
+}
+.bg-dark .ant-table {
+  color: #93948f !important;
+  font-weight: 500 !important;
+}
+.bg-light .ant-table {
+  color: #93948f !important;
+  font-weight: 500 !important;
+}
+.bg-dark .ant-table-thead > tr > th {
+  color: #c5c5c5 !important;
+  font-weight: 500 !important;
+}
+.ant-table-thead > tr > th {
+  background: transparent !important;
+  border-bottom: 1px solid rgb(177, 177, 177) !important;
+}
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid rgb(177, 177, 177) !important;
+}
+.ant-table-tbody tr:hover td {
+  background: transparent !important;
+}
+.ant-table-tbody tr td {
+  background: transparent !important;
+}
+.card-form {
+  border: 0px;
+  background: #152a38;
+}
+.form-class .ant-form-item-label > label {
+  font-weight: 600;
+  color: #c2c2c2;
+}
